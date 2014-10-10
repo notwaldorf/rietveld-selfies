@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "GitHub Selfies",
-  "description": "Selfies! For GitHub! Hooray!",
-  "version": "1.8",
+  "name": "Rietveld Selfies",
+  "description": "Selfies! For Rietveld! Hooray!",
+  "version": "1.0",
 
   "icons": {
     "16": "icon16.png",
@@ -14,8 +14,8 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "https://github.com/*",
-    "http://github.com/*"
+    "https://codereview.chromium.com/*",
+    "http://codereview.chromium.com/*"
   ],
 
   "background": {
@@ -25,27 +25,10 @@
 
   "content_scripts": [
     {
-      "js": ["jquery.min.js", "selfie-base.js", "compare.js", "b64.js", "GIFEncoder.js", "LZWEncoder.js", "NeuQuant.js"],
-      "matches": ["*://github.com/*/compare*"],
+      "js": ["jquery.min.js", "selfie-base.js", "publish.js", "b64.js", "GIFEncoder.js", "LZWEncoder.js", "NeuQuant.js"],
+      "matches": ["*://codereview.chromium.org/*/publish"],
       "run_at": "document_end",
       "css": ["compare.css"]
-    },
-    {
-      "js": ["jquery.min.js", "selfie-base.js", "pull.js", "b64.js", "GIFEncoder.js", "LZWEncoder.js", "NeuQuant.js"],
-      "matches": ["*://github.com/*/pull/*"],
-      "run_at": "document_end",
-      "css": ["pull.css"]
-    },
-    {
-      "js": ["jquery.min.js", "selfie-base.js", "new-issue.js", "b64.js", "GIFEncoder.js", "LZWEncoder.js", "NeuQuant.js"],
-      "matches": ["*://github.com/*/issues/new"],
-      "run_at": "document_start"
-    },
-    {
-      "js": ["jquery.min.js", "selfie-base.js", "issues.js", "b64.js", "GIFEncoder.js", "LZWEncoder.js", "NeuQuant.js"],
-      "matches": ["*://github.com/*/issues/*"],
-      "exclude_matches": ["*://github.com/*/issues/new"],
-      "run_at": "document_start"
     }
   ],
 

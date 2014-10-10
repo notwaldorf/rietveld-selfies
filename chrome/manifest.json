@@ -28,14 +28,13 @@
       "js": ["jquery.min.js", "selfie-base.js", "publish.js", "b64.js", "GIFEncoder.js", "LZWEncoder.js", "NeuQuant.js"],
       "matches": ["*://codereview.chromium.org/*/publish"],
       "run_at": "document_end",
-      "css": ["compare.css"]
+      "css": ["publish.css"]
     }
   ],
 
   "web_accessible_resources": [
-    "jquery-1.10.1.min.map",
-    "new-issue.css",
-    "issues.css"
+    "camera-icon-1x.png",
+    "camera-icon-2x.png"
   ]
 
 }

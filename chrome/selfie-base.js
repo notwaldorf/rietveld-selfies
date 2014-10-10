@@ -12,10 +12,6 @@ function GitHubSelfies(config) {
   config.clientId         = 'cc9df57988494ca';
   config.stream           = null;
 
-  config.toggleHTML = (
-    '<button id="selfieToggle" type="button" class="button dark-grey">GIF?</button>'
-  );
-
   config.videoHTML = (
     '<div class="selfieVideoContainer">' +
       '<div class="selfieProgressContainer"><div class="selfieProgress"></div></div>' +
@@ -43,7 +39,7 @@ function GitHubSelfies(config) {
       $('.form-actions-protip').hide();
       placeButton(candidate);
       placeToggle();
-      placeVideo();
+      //placeVideo();
       setupEvents();
       config.setupComplete = true;
     }

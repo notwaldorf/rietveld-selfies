@@ -9,7 +9,7 @@ function GitHubSelfies(config) {
   config.setupComplete    = false;
   config.selfiesTaken     = 0;
   config.interval         = 100;
-  config.clientId         = 'cc9df57988494ca';
+  config.clientId         = 'ab5ccb9a3f8643e';
   config.stream           = null;
 
   config.videoHTML = (
@@ -35,7 +35,6 @@ function GitHubSelfies(config) {
     }
     if (candidate === null) { return setTimeout(function() { setupStream(); }, 250); }
     else {
-      $('.form-actions-protip').hide();
       placeButton(candidate);
       placeToggle();
       placeVideo();

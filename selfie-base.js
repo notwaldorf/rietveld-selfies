@@ -195,7 +195,7 @@ function GitHubSelfies(config) {
   }
 
   function replacePlaceholderInBody (number, link) {
-    var textarea  = document.querySelector(config.bodySelector)
+    var textarea  = $(config.bodySelector)
       , toReplace = '[[selfie-placeholder-' + number + ']]';
 
     $(config.bodySelector)

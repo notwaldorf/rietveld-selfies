@@ -1,7 +1,7 @@
 (function() {
   var config = {
       insertBefore : ['input[value="Send Message"]'],
-      bodySelector : '.message-actions textarea[name="message"]',
+      bodySelector : '.message textarea:visible',
       buttonHTML   : (
         '<div class="selfieButtonContainer">' +
           '<button id="totallyAwesomeSelfieButton" type="button" class="button">' +

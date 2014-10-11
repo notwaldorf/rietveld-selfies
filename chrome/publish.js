@@ -9,7 +9,7 @@
             'Take Selfie!' +
           '</button>' +
           '<p>P.S: Hover over the Take Selfie! button to start the video feed. <br>' +
-          'After you take your selfie, wait for a bit and ...boom! An imgur link.</p>' +
+          'Take a selfie, wait for a (long-ish) bit and ...boom! You win an imgur link.</p>' +
         '</div>'
       ),
       toggleHTML   : (

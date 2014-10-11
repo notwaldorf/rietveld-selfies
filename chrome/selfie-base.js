@@ -201,7 +201,7 @@ function GitHubSelfies(config) {
     $(config.bodySelector)
       .val($(config.bodySelector)
       .val()
-      .replace(toReplace, '![selfie-' + number + '](' + link + ')'));
+      .replace(toReplace, link));
 
     textarea.focus();
     textarea.setSelectionRange(textarea.textLength, textarea.textLength);

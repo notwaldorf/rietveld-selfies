@@ -40,6 +40,7 @@ function GitHubSelfies(config) {
       placeVideo();
       setupEvents();
       config.setupComplete = true;
+      startVideo();
     }
   };
 

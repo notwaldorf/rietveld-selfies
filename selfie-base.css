@@ -1,3 +1,42 @@
+/* Rietveld has buttons from the 80s*/
+.button {
+  /*position: relative;
+  display: inline-block;*/
+  background-color: #fcfcfc;
+  background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+  background-repeat: repeat-x;
+  border-radius: 3px;
+  border: 1px solid #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 6px;
+  text-shadow: 0 1px 0 #fff;
+  vertical-align: middle;
+}
+
+.button:hover {
+  background-image: -webkit-linear-gradient(#eee, #d5d5d5);
+}
+
+.button:active {
+  background-image: -webkit-linear-gradient(#c9c9c9, #dedede);
+}
+
+.camera-icon {
+  background: -webkit-image-set(
+      url('chrome-extension://__MSG_@@extension_id__/camera-icon-1x.png') 1x,
+      url('chrome-extension://__MSG_@@extension_id__/camera-icon-2x.png') 2x)
+      no-repeat;
+  padding-left: 20px;
+}
+
+.button:focus {
+  outline: none;
+}
+
 video {
   display: inline-block;
   float: left;

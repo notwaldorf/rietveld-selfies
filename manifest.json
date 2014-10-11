@@ -24,6 +24,13 @@
       "matches": ["*://codereview.chromium.org/*/publish"],
       "run_at": "document_end",
       "css": ["selfie-base.css", "publish.css"]
+    },
+    {
+      "js": ["jquery.min.js", "selfie-base.js", "inline-reply.js", "b64.js", "GIFEncoder.js", "LZWEncoder.js", "NeuQuant.js"],
+      "matches": ["*://codereview.chromium.org/*"],
+      "exclude_matches": ["*://codereview.chromium.org/*/publish"],
+      "run_at": "document_end",
+      "css": ["selfie-base.css", "inline-reply.css"]
     }
   ],
 

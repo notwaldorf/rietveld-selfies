@@ -28,7 +28,7 @@
       "js": ["jquery.min.js", "selfie-base.js", "publish.js", "b64.js", "GIFEncoder.js", "LZWEncoder.js", "NeuQuant.js"],
       "matches": ["*://codereview.chromium.org/*/publish"],
       "run_at": "document_end",
-      "css": ["publish.css"]
+      "css": ["selfie-base.css", "publish.css"]
     }
   ],
 

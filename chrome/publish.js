@@ -1,7 +1,7 @@
 (function() {
   var config = {
       insertBefore : ['#id_message'],
-      bodySelector : '[name="[body]"]',
+      bodySelector : '#id_message',
       buttonHTML   : (
         '<div class="selfieButtonContainer">' +
           '<button id="totallyAwesomeSelfieButton" type="button" class="button">' +

@@ -20,12 +20,11 @@ function GitHubSelfies(config) {
         '<video autoplay id="selfieVideo" class="hideSelfieVideo"></video>' +
       '</div>' +
       '<p class="selfieVideoOverlay"></p>' +
-      '<canvas id="selfieCanvas" class="hidden"></canvas>' +
+      '<canvas id="selfieCanvas" hidden></canvas>' +
     '</div>'
   );
 
   this.setupSelfieStream = function setupStream () {
-    console.log('fire');
     var candidate;
     for (var i = 0; i < config.insertBefore.length; i++) {
       candidate = config.insertBefore[i] + ':visible';
@@ -39,7 +38,7 @@ function GitHubSelfies(config) {
       $('.form-actions-protip').hide();
       placeButton(candidate);
       placeToggle();
-      //placeVideo();
+      placeVideo();
       setupEvents();
       config.setupComplete = true;
     }
@@ -47,7 +46,7 @@ function GitHubSelfies(config) {
 
   function placeVideo () {
     if (typeof config.placeVideo === 'function') { config.placeVideo(config.videoHTML); }
-    else { $(config.videoHTML).insertBefore(config.buttonSelector); }
+    else { $(config.videoHTML).insertAfter(config.buttonSelector); }
   }
 
   function placeToggle () {
